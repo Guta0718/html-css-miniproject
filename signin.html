@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/style/signinstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="side-image">
+            <img src="assets/images/global_performance_summary.jpg" alt="group image">
+        </div>
+    
+    <div class="form-side">
+            <h1 class="signin-header">
+                Sign In
+            </h1>
+    <form action="action_page.php" method="post">
+        <label class="email-label" for="email">E-mail</label>
+        <input type="email" placeholder="Enter E-mail" name="email" required>
+
+       <label class="email-label" for="psw">Password</label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <div class="chk-box-wrapper">
+            <label class="switch">
+             <input type="checkbox">
+             <div class="slider round"> </div>
+            </label>
+            <div class="rememberme">Remember me
+            </div> 
+        </div>
+            <button type="submit"> Sign-In</button>
+            <div class="forgot-password"><a href="#">Forgot password?</a> </div>
+            <div class="signup"> Create a new account  <a href="signup.html">Sign Up</a> </div>
+    </form>
+        </div>
+    </div>
+</body>
+</html>
