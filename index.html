@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+      <div class="heading">
+            <div class="searchbar">
+            <search>
+              <form action="/search" method="get" class="search-form">
+                    <input 
+                    type="search" 
+                    id="site-search" 
+                    name="q" 
+                    placeholder="Search..." 
+                    aria-label="Search through site content"
+                    required
+                    >
+                <button type="submit">
+                    <svg class="search-icon" xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+               </form>
+            </search>
+            </div>
+            <div class="header-image">
+                <img src="assets/images/mark_Johnson.jpg" alt="mark jhonson" width="25px" height="25px">
+            </div>
+            <div class="settings">
+                <button class="setting-button">
+                  <img src="assets/images/settings.svg" alt="settings" width="25px" height="25px">                  
+                </button>
+            <div class="notifications">
+                <button class="notifications-button">
+                <img src="assets/images/notification.png" alt="notification" width="25px" height="25px">
+                </button>
+            </div>          
+            </div>
+        </div>
+    </header>
+        <div class="main-wrapper">
+            <aside class="side-bar">
+    <div class="side-bar-list-wrapper">
+        <ul class="sidebar-list">
+            <li class="active-bar">Dashboard</li>
+            <li>Tables</li>
+            <li>Billings</li>
+            <li>RTL</li>
+            <br>
+            <br>
+            <li>Profile</li>
+            <li> <a href="signup.html">Sign Up</a></li>
+            <li> <a href="signin.html"> Sign In </a> </li>
+        </ul>
+    </div>
+        </aside>
+        <div class="right-side-wrapper">
+    <section class="numbers-wrapper">
+                <div class="stat-card card-1">
+                    <div class="stat-info">
+                        <p>Today's Money</p>
+                        <h3>ETB 10,000</h3>
+                    </div>
+                    <div class="stat-icon">💳</div>
+                </div>
+                <div class="stat-card card-2">
+                    <div class="stat-info">
+                        <p>Today's Users</p>
+                        <h3>2,478</h3>
+                    </div>
+                    <div class="stat-icon">🌐</div>
+                </div>
+                <div class="stat-card card-3">
+                    <div class="stat-info">
+                        <p>New Clients</p>
+                        <h3>683</h3>
+                    </div>
+                    <div class="stat-icon">📄</div>
+                </div>
+                <div class="stat-card card-4">
+                    <div class="stat-info">
+                        <p>Total Sales</p>
+                        <h3>4,610</h3>
+                    </div>
+                    <div class="stat-icon">🛒</div>
+                </div>
+            </section>
+
+            <section class="middle-row">
+    
+    <div class="card welcome-card">
+        <div class="welcome-header">
+            <img src="assets/images/mark_Johnson.jpg" alt="Mark Johnson" class="avatar" width="40px" height="40px">
+            <div>
+                <span class="subtext">Welcome back,</span>
+                <h2>Mark Johnson</h2>
+            </div>
+        </div>
+        <p class="welcome-text">
+            Welcome to Mark Johnson. Welcome a high-quality professional portrait. We help you to grant your most room, engaging and benefits.
+        </p>
+        <button class="action-btn">Tap to record &rarr;</button>
+    </div>
+
+        <div class="card feedback-card">
+        <h3>Customer Feedback</h3>
+        <div class="quote-icon">&ldquo;&ldquo;</div>
+        <p class="quote-text">
+            "Excellent service and intuitive platform! Highly recommend."
+        </p>
+        <span class="quote-author">- Sarah L.</span>
+    </div>
+
+    <div class="card referrals-card">
+        <div class="card-header-top">
+            <h3>Recent Referrals</h3>
+        </div>
+        <div class="referrals-image-wrapper">
+            <img src="assets/images/recent_referrals.jpg" alt="Recent Referrals Team" class="referrals-img">
+        </div>
+        <div class="referrals-footer">
+            <h4>Recent Referrals</h4>
+            <p>John D., Emily K., Michael B., Jessica R.</p>
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>

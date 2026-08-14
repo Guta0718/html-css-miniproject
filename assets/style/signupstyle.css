@@ -26,6 +26,7 @@ body{
 .side-image img {
     width: 100%;
     height: 100%;
+    border-radius: 5px;
 }
 
 .side-image{
@@ -38,30 +39,30 @@ body{
     display: flex;
     flex-direction: column;
     width: 30%;
-    margin: 45px;
-    padding: 5px;
+    margin: 50px;
+    padding: 20px;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     background-color: #1e1e1e;
     border:1px solid #484848;
     border-radius: 16px;
-    height: 65%;
+    height: 60%;
+    position: relative;
 }
-form{
-    margin:0 ;
-}
+
 
 input{
     display:block;
+    align-items:center;
     width: 100% ;
     background-color: #292828;
     border:1px solid #2196F3;
     color: #ffffff;
-    padding: 8px;
+    padding: 8px 10px;
+    margin-top: 3px;
     margin-bottom: 10px;
-    align-items: center;
-    border-radius: 16px;
-    max-width: 300px;
+    border-radius: 10px;
+    max-width: 330px;
     height: 15px;
     
 }
@@ -70,15 +71,18 @@ button{
     background-color: #3BB2F6;
     color: #111111;
     border: #3BB2F6;
-    display: inline;
+    display: block;
     cursor: pointer;
     width: 100%;
-    height: 30px;
-    max-width: 300px;
+    height: 35px;
+    max-width: 350px;
     padding: 8px;
-    border-radius: 16px;
+    border-radius: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 600;
+    font-size: 15px;
+    
 }
 
 button:hover {
@@ -86,12 +90,100 @@ button:hover {
 }
 
 .email-label{
-padding-left: 0.5rem;
-margin-bottom:1rem;
+    padding-left: 0.5rem;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
+
 
 a{
     color: #2196F3;
     text-decoration: solid;
 }
 
+.signin{
+    text-align: center;
+}
+
+.signup-header{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .side-image {
+    display: none; 
+  }
+
+  body {
+    background: url("assets/images/recent_referrals.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  .form-side {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(30, 30, 30, 0.85); 
+  }
+
+  input, button {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    background: "assets/images/recent_referrals.jpg";
+    background-size: cover;
+  }
+
+  .form-side {
+    width: 95%;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: rgba(30, 30, 30, 0.85); 
+  }
+
+  .signup-header {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  input, button {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .signin {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-header {
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  input, button {
+    height: 5px;
+    font-size: 10px;
+    width: 70%;
+  }
+
+  .form-side {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    background-color: rgba(30, 30, 30, 0.9);
+  }
+}
